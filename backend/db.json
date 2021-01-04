@@ -1,0 +1,28 @@
+{
+    "clients": [
+      {
+        "id": 1,
+        "name": "Jonas Lopes",
+        "email": "jonasmassume@gmail.com",
+        "pass": "12345oz"
+      },
+      {
+        "id": 2,
+        "name": "Teste",
+        "email": "teste@teste.com",
+        "pass": "12345oz"
+      },
+      {
+        "id": 3,
+        "name": "Giuliano Carvalho",
+        "email": "giuliano.carvalho01@gmail.com",
+        "pass": "12345oz"
+      },
+      {
+        "id": 4,
+        "name": "Usuário_X",
+        "email": "usuario@email.com",
+        "pass": "12345oz"
+      }
+    ]
+  }
