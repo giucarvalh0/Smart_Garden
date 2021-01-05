@@ -1,4 +1,4 @@
-# Projeto: Horta Inteligênte
+# Projeto: Horta Inteligente
 
 *Pré-requisitos:*
 
