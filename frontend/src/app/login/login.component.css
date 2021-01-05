@@ -1,0 +1,138 @@
+/* .main{
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill);
+  grid-template-rows: repeat(auto-fill);
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+} */
+.side-image{
+    background-image: url(/assets/img/login_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    width: 50%;
+    grid-template-columns: repeat(auto-fill);
+    grid-template-rows: repeat(auto-fill);
+    vertical-align: top;
+  }
+  
+  .rectangle{
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-color: black;
+  }
+  
+  .imagem{
+    grid-template-columns: repeat(auto-fit);
+    grid-template-rows: repeat(auto-fit);
+    position: fixed;
+    margin: 0 auto;
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    vertical-align: top;
+  }
+  
+  .login-title{
+    margin: 0 auto;
+    text-align: center; 
+    vertical-align: top;
+    margin-top:100px; 
+    margin-bottom: 60px; 
+    font-size: 56px; 
+    font-weight: 600; 
+    color: #7c7c7c;
+  }
+  form{
+    padding-left: 30px;
+  }
+  .form-group row{
+    margin: auto;
+  }
+  .col-form-label{
+    color: #7c7c7c; 
+    font-size: 32px; 
+    font-weight: 600;
+  }
+  .form-div{
+    margin: auto;
+  }
+  input{
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+  }
+  .esqueci-senha-button{
+    color: #6c757d9a; 
+    float: right; 
+    text-align: right; 
+    font-size: 13px; 
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+  .table-botao{
+    width: 90%; 
+    font-size: 24px; 
+    margin-left: 45px; 
+    margin-top: 10px;
+    border-top-style: solid; 
+    border-top-width: 1,5px; 
+    border-left-style: solid; 
+    border-left-width: 1,5px; 
+    border-bottom-width: 1,5px; 
+    border-bottom-style: solid; 
+    border-right-width: 1,5px; 
+    border-right-style: solid;
+    border-color: white;
+    float: center;
+  }
+  .button-h1{
+    text-align: center; 
+    margin-bottom: 25px;
+  }
+  .entrar-button{
+    cursor: pointer; 
+    float: center; 
+    border:1px solid; 
+    vertical-align: top; 
+    background:#338326; 
+    color:white; 
+    font-weight: 600; 
+    border-radius:6px; 
+    font-size: 24px; 
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .cadastrar-button{
+    float: center; 
+    border:1px solid; 
+    vertical-align: top; 
+    border-color: #338326; 
+    background: white; 
+    color:#338326; 
+    font-weight: 600; 
+    border-radius:6px; 
+    font-size: 24px; 
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px; 
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+  }
