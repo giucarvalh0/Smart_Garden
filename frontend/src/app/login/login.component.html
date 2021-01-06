@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,50 +11,45 @@
 
     <body>
         <div>
-            <div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div>
-                            <h1 class="login-title">Login</h1>
-                        </div>
-                        <form>
-                            <div class="form-group row">
-                                <label for="Email" class="col-sm-2 col-form-label">Email:</label>
-                                <div class="col-sm-6 form-div">
-                                    <input type="email" class="form-control" id="Email">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="Password" class="col-sm-2 col-form-label">Senha:</label>
-                                <div class="col-sm-6 form-div" style= "margin-top: 15px;">
-                                    <input type="password" class="form-control" id="Password">
-                                    <a class="esqueci-senha-button" routerLink="/recuperar-senha">Esqueci minha senha</a>
-                                </div>
-                            </div>
-                        </form>
-                        <table class="table-botao">
-                            <tr>
-                                <td>
-                                    <h1 class="button-h1">
-                                        <a class="entrar-button" (click) = "navigateToDashboard()">Entrar</a>
-                                    </h1>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h1 class="button-h1">
-                                        <a class="cadastrar-button" routerLink="/cadastro">Cadastrar</a>
-                                    </h1>
-                                </td>
-                            </tr>
-                        </table>
+            <div class="row">
+                <div class="col-lg-6 container">
+                    <div>
+                        <h1 class="login-title">Login</h1>
                     </div>
-                    <div class="col-md-6 side-image img-responsive"></div>
+                    <form>
+                        <div class="form-group row">
+                            <label for="Email" class="col-sm-2 col-form-label">Email:</label>
+                            <div class="col-sm-6 form-div">
+                                <input type="email" class="form-control" id="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="Password" class="col-sm-2 col-form-label">Senha:</label>
+                            <div class="col-sm-6 form-div">
+                                <input type="password" class="form-control" id="Password">
+                                <a class="esqueci-senha-button" routerLink="/recuperar-senha">Esqueci minha senha</a>
+                            </div>
+                        </div>
+                    </form>
+                    <table class="table-botao">
+                        <tr>
+                            <td>
+                                <h1 class="button-h1">
+                                    <a class="entrar-button" (click) = "navigateToDashboard()">Entrar</a>
+                                </h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1 class="button-h1">
+                                    <a class="cadastrar-button" routerLink="/cadastro">Cadastrar</a>
+                                </h1>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
+                <div class="col-lg-6 side-image img-responsive"></div>
             </div>
-            
-
-
         </div>
                     
 
