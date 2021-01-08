@@ -1,6 +1,7 @@
 html, body{
-  height: 100%;
+  height: auto;
   overflow: hidden;
+  margin:auto
 }
 .side-image{
   background-image: url(/assets/img/login_image.png);
@@ -9,7 +10,6 @@ html, body{
   background-size: cover;
 }
 .login-title{
-  margin: 0 auto;
   text-align: center; 
   vertical-align: top;
   margin-top:100px; 
@@ -19,7 +19,7 @@ html, body{
 form{
   padding-left: 30px;
 }
-.form-group row{
+.form-group {
   margin: auto;
 }
 .col-form-label{
@@ -43,8 +43,6 @@ input{
 .table-botao{
   width: 90%; 
   font-size: 24px; 
-  margin-left: 45px; 
-  margin-top: 10px;
   border-top-style: solid; 
   border-top-width: 1,5px; 
   border-left-style: solid; 
@@ -55,11 +53,18 @@ input{
   border-right-style: solid;
   border-color: white;
   float: center;
+  margin: auto;
 }
 .button-h1{
   text-align: center; 
-  margin-bottom: 25px;
+  margin: auto;
 }
+
+
+
+
+
+
 @media screen and (min-width: 767px) {
   h1{
     font-size: 55px;
@@ -90,24 +95,24 @@ input{
     border-right-width: 2px;
     border-top-width: 2px;
   }
-.entrar-button{
-  cursor: pointer; 
-  float: center; 
-  border:1px solid; 
-  vertical-align: top; 
-  background:#338326; 
-  color:white; 
-  font-weight: 600; 
-  border-radius:6px; 
-  font-size: 24px; 
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.form-div{
-  margin-top: 15px;
-}
+  .entrar-button{
+    cursor: pointer; 
+    float: center; 
+    border:1px solid; 
+    vertical-align: top; 
+    background:#338326; 
+    color:white; 
+    font-weight: 600; 
+    border-radius:6px; 
+    font-size: 24px; 
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .form-div{
+    margin-top: 15px;
+  }
 }
 @media screen and (max-width: 767px) {
   h1{
@@ -117,8 +122,13 @@ input{
   label{
     font-size: 25px;
   }
-  .form-div{
+  /* .form-div{
     margin: auto;
+  } */
+  .form-control{
+    margin-right: 5px;
+    margin-top: 0px;
+
   }
   .cadastrar-button{
     float: center; 
@@ -154,7 +164,16 @@ input{
     padding-bottom: 5px;
     padding-top: 5px;
   }
-  .form-div{
-    margin-top: 0px;
+}
+@media screen and (min-width: 1920px) {
+  .side-image{
+    background-image: url(/assets/img/login_image_big.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cadastrar-button{
+    margin: auto;
+    
   }
 }
