@@ -1,7 +1,7 @@
 html, body{
-  height: auto;
+  height: 100%;
   overflow: hidden;
-  margin:auto
+  margin: auto;
 }
 .side-image{
   background-image: url(/assets/img/login_image.png);
@@ -76,6 +76,12 @@ input{
   .form-div{
     margin: auto;
   }
+  .side-image{
+    background-image: url(/assets/img/login_image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .cadastrar-button{
     float: center; 
     border:1px solid; 
@@ -122,9 +128,9 @@ input{
   label{
     font-size: 25px;
   }
-  /* .form-div{
+  .form-div{
     margin: auto;
-  } */
+  }
   .form-control{
     margin-right: 5px;
     margin-top: 0px;
@@ -171,9 +177,5 @@ input{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .cadastrar-button{
-    margin: auto;
-    
   }
 }
