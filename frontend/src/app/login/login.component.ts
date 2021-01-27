@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   }
 
   navigateToDashboard(): void {
-    this.router.navigate(['/cliente-dashboard'])
+    this.router.navigate(['/disponibilizar-produtos'])
   }
 
 }

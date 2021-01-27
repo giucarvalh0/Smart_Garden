@@ -1,143 +1,139 @@
-html, body{
+html,
+body {
     height: 100%;
     overflow: hidden;
     margin: auto;
 }
-.side-image{
-    background-image: url(/assets/img/login_image.png);
+
+.side-image {
+    background-image: url(/assets/img/cadastro_image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.cadastro-title{
-    text-align: center; 
+
+.cadastro-title {
+    text-align: center;
     vertical-align: top;
-    margin-top:5px; 
-    margin-bottom: 10px;  
+    margin-top: 5px;
+    margin-bottom: 10px;
     color: #7c7c7c;
 }
-form{
+
+form {
     padding-left: 30px;
 }
+
 .form-group {
     margin: auto;
 }
-.col-form-label{
-    color: #7c7c7c; 
+
+.col-form-label {
+    color: #7c7c7c;
     font-weight: 600;
 }
-input{
+
+input {
     border-top-width: 2px;
     border-left-width: 2px;
     border-bottom-width: 2px;
     border-right-width: 2px;
 }
-.table-botao{
-    width: 90%; 
-    font-size: 24px; 
-    border-top-style: solid; 
-    border-top-width: 1,5px; 
-    border-left-style: solid; 
-    border-left-width: 1,5px; 
-    border-bottom-width: 1,5px; 
-    border-bottom-style: solid; 
-    border-right-width: 1,5px; 
+
+.table-botao {
+    width: 90%;
+    font-size: 24px;
+    border-top-style: solid;
+    border-top-width: 1, 5px;
+    border-left-style: solid;
+    border-left-width: 1, 5px;
+    border-bottom-width: 1, 5px;
+    border-bottom-style: solid;
+    border-right-width: 1, 5px;
     border-right-style: solid;
     border-color: white;
     float: center;
     margin: auto;
 }
-.button-h1{
-    text-align: center; 
+
+.button-h1 {
+    text-align: center;
     margin: auto;
 }
-.form-check{
+
+.form-check {
     text-align: center;
-    color: #7c7c7c; 
-    font-size: 16px; 
+    color: #7c7c7c;
+    font-size: 16px;
     font-weight: 600;
 }
-  
-  
-  
-  
-  
-@media screen and (min-width: 767px) {
-    h1{
-      font-size: 45px;
-      font-weight: 600;
-    }
-    label{
-      font-size: 30px;
-    }
-    .form-div{
-      margin: auto;
-    }
-    .side-image{
-      background-image: url(/assets/img/login_image.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .cadastrar-button{
-      cursor: pointer; 
-      float: center; 
-      border:1px solid; 
-      vertical-align: top; 
-      background:#338326; 
-      color:white; 
-      font-weight: 600; 
-      border-radius:6px; 
-      font-size: 24px; 
-      padding-left: 80px;
-      padding-right: 80px;
-      padding-bottom: 10px;
-      padding-top: 10px;
-    }
-    .form-div{
-      margin-top: 15px;
-    }
-}
 
-@media screen and (max-width: 767px) {
-    h1{
-      font-size: 50px;
-      font-weight: 600;
+@media screen and (min-width: 767px) {
+    h1 {
+        font-size: 45px;
+        font-weight: 600;
     }
-    label{
-      font-size: 25px;
+    label {
+        font-size: 30px;
     }
-    .form-div{
-      margin: auto;
-      padding-right: 36px;
+    .form-div {
+        margin: auto;
     }
-    .form-control{
-      margin-right: 5px;
-      margin-top: 0px;
-  
+    .side-image {
+        background-image: url(/assets/img/cadastro_image.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-    .cadastrar-button{
-        cursor: pointer; 
-        float: center; 
-        border:1px solid; 
-        vertical-align: top; 
-        background:#338326; 
-        color:white; 
-        font-weight: 600; 
-        border-radius:6px; 
-        font-size: 24px; 
+    .cadastrar-button {
+        cursor: pointer;
+        float: center;
+        border: 1px solid;
+        vertical-align: top;
+        background: #338326;
+        color: white;
+        font-weight: 600;
+        border-radius: 6px;
+        font-size: 24px;
         padding-left: 80px;
         padding-right: 80px;
         padding-bottom: 10px;
         padding-top: 10px;
-      }
+    }
+    .form-div {
+        margin-top: 15px;
+    }
 }
 
-@media screen and (min-width: 1920px) {
-    .side-image{
-      background-image: url(/assets/img/login_image_big.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    label {
+        font-size: 25px;
+    }
+    .form-div {
+        margin: auto;
+        padding-right: 36px;
+    }
+    .form-control {
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+    .cadastrar-button {
+        cursor: pointer;
+        float: center;
+        border: 1px solid;
+        vertical-align: top;
+        background: #338326;
+        color: white;
+        font-weight: 600;
+        border-radius: 6px;
+        font-size: 24px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 }

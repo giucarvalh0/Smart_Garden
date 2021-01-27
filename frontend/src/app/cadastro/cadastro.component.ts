@@ -13,6 +13,6 @@ export class CadastroComponent implements OnInit {
   ngOnInit(): void {
   }
   navigateToDashboard(): void {
-    this.router.navigate(['/cliente-dashboard'])
+    this.router.navigate(['/client-dashboard'])
   }
 }
