@@ -1,3 +1,4 @@
+import { DashboardClienteComponent } from './../dashboard-cliente/dashboard-cliente.component';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
   }
 
   navigateToDashboard(): void {
-    this.router.navigate(['/disponibilizar-produtos'])
+    this.router.navigate(['/dashboard-cliente'])
   }
 
 }

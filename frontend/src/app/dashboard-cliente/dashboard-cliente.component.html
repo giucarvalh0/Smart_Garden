@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 px-1 bg-white position-fixed" _ngcontent-dje-c16="" id="sticky-sidebar">
+                <h1>
+                    <nav class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets\img\perfil_icon.svg" width="24" height="24" class="d-inline-block align-middle" alt="  " loading="lazy"> Perfil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets\img\dados_da_horta_icon.svg" width="26" height="26" class="d-inline-block align-middle" alt="  " loading="lazy"> Dados da Horta
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets\img\produtos_icon.svg" width="20" height="20" class="d-inline-block align-middle" alt="  " loading="lazy"> Produtos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets\img\log_da_horta_icon.svg" width="18" height="18" class="d-inline-block align-middle" alt="  " loading="lazy"> Log da Horta
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets\img\colheita_e_retirada_icon.svg" width="22" height="22" class="d-inline-block align-middle" alt="  " loading="lazy"> Colheita/Retirada
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="assets\img\fotos_icon.svg" width="22" height="22" class="d-inline-block align-middle" alt="  " loading="lazy"> Fotos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="">
+                                <img src="assets\img\sair_icon.svg" width="22" height="22" class="d-inline-block align-middle" alt="  " loading="lazy"> Sair
+                            </a>
+                        </li>
+                    </nav>
+                </h1>
+            </div>
+            <div class="col offset-3" id="main">
+                <h1>
+                    <div class="card bg-dark text-white">
+                        <img src="assets\img\horta_inteligente_title_img.png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 _ngcontent-mye-c16="" class="card-title">Horta Inteligente</h5>
+                        </div>
+                    </div>
+                </h1>
+
+
+                <div class="row">
+                    <div class="row">
+                        <h3 _ngcontent-jjk-c16="" class="menu">
+                            <img _ngcontent-jjk-c16="" src="assets\img\seta.svg" alt="..." class="d-inline-block align-middle" width="32" height="32">Dados da Horta
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <p _ngcontent-jjk-c16="" class="umidade">
+                            <img _ngcontent-jjk-c16="" src="assets\img\seta.svg" alt="..." class="d-inline-block align-middle" width="24" height="24">Umidade:
+                            <span _ngcontent-ysm-c16="" class="badge badge-success">30%</span>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p _ngcontent-jjk-c16="" class="irrigacao">Irrigação:
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span _ngcontent-vdd-c16="" class="slider round"></span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="row">
+                        <h3 _ngcontent-jjk-c16="" class="menu">
+                            <img _ngcontent-jjk-c16="" src="assets\img\seta.svg" alt="..." class="d-inline-block align-middle" width="32" height="32">Produtos
+                        </h3>
+                    </div>
+
+                    <table>
+                        <tr class="custom-header">
+                            <th class="first-column">Nome do Produto</th>
+                            <th class="second-column">Créditos</th>
+                        </tr>
+                        <tr>
+                            <td>Tomate</td>
+                            <td>C$1,00</td>
+                        </tr>
+                        <tr>
+                            <td>Alface</td>
+                            <td>C$2,00</td>
+                        </tr>
+                        <tr>
+                            <td>Rúcula</td>
+                            <td>C$3,00</td>
+                        </tr>
+                        <tr>
+                            <td>Pimenta</td>
+                            <td>C$4,00</td>
+                        </tr>
+                        <tr>
+                            <td>Cebola</td>
+                            <td>C$5,00</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="row">
+                    <p _ngcontent-jjk-c16="" class="menu">
+                        <img _ngcontent-jjk-c16="" src="assets\img\seta.svg" alt="..." class="d-inline-block align-middle" width="32" height="32">Log da Horta
+                    </p>
+                    <table>
+                        <tr>
+                            <td>10/08/2020</td>
+                            <td>11:30</td>
+                            <td>Irrigação foi ligada</td>
+                        </tr>
+                        <tr>
+                            <td>10/08/2020</td>
+                            <td>10:37</td>
+                            <td>Foram coletadas 5 alfaces</td>
+                        </tr>
+                        <tr>
+                            <td>10/08/2020</td>
+                            <td>8:30</td>
+                            <td>Irrigação foi desligada</td>
+                        </tr>
+                        <tr>
+                            <td>09/08/2020</td>
+                            <td>23:30</td>
+                            <td>Foram coletadas 35 pimentas</td>
+                        </tr>
+                        <tr>
+                            <td>09/08/2020</td>
+                            <td>17:02</td>
+                            <td>Irrigação foi ligada</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="row">
+                    <p _ngcontent-jjk-c16="" class="menu">
+                        <img _ngcontent-jjk-c16="" src="assets\img\seta.svg" alt="..." class="d-inline-block align-middle" width="32" height="32">Colheita/Retirada
+                    </p>
+                    <table>
+                        <thead>
+                            <tr class="tr-thead">
+                                <th class="th-thead" colspan="4">Produtos Disponíveis</th>
+                            </tr>
+                        </thead>
+                        <tr class="custom-header">
+                            <th class="first-column">Nome do Produto</th>
+                            <th class="second-column">Quantidade</th>
+                        </tr>
+                        <tr>
+                            <td>Tomate</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Alface</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Rúcula</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Pimenta</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Cebola</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                    <!-- <table class="button-table">
+                        <tr class="button-tr">
+                            <td>
+                                <div>
+                                    <a class="solicitar-produtos-button" routerLink="/solicitar-produtos">Solicitar produtos</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table> -->
+                    <div class="d-grid gap-2 col-4 mx-auto">
+                        <button class="btn btn-primary" type="button" href="#">Solicitar Produtos</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>

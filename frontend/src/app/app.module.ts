@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { RetiradaComponent } from './retirada/retirada.component';
 import { DisponibilizacaoComponent } from './disponibilizacao/disponibilizacao.component';
+import { DashboardClienteComponent } from './dashboard-cliente/dashboard-cliente.component';
+import { DashboardCuidadorComponent } from './dashboard-cuidador/dashboard-cuidador.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { DisponibilizacaoComponent } from './disponibilizacao/disponibilizacao.c
     CadastroComponent,
     RetiradaComponent,
     DisponibilizacaoComponent,
+    DashboardClienteComponent,
+    DashboardCuidadorComponent,
     
   ],
   imports: [
