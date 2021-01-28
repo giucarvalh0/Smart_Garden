@@ -1,181 +1,187 @@
-html, body{
-  height: 100%;
-  overflow: hidden;
-  margin: auto;
-}
-.side-image{
-  background-image: url(/assets/img/login_image.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.login-title{
-  text-align: center; 
-  vertical-align: top;
-  margin-top:100px; 
-  margin-bottom: 60px;  
-  color: #7c7c7c;
-}
-form{
-  padding-left: 30px;
-}
-.form-group {
-  margin: auto;
-}
-.col-form-label{
-  color: #7c7c7c; 
-  font-weight: 600;
-}
-input{
-  border-top-width: 2px;
-  border-left-width: 2px;
-  border-bottom-width: 2px;
-  border-right-width: 2px;
- }
-.esqueci-senha-button{
-  color: #6c757d9a; 
-  float: right; 
-  text-align: right; 
-  font-size: 13px; 
-  font-weight: 600;
-  margin-bottom: 60px;
-}
-.table-botao{
-  width: 90%; 
-  font-size: 24px; 
-  border-top-style: solid; 
-  border-top-width: 1,5px; 
-  border-left-style: solid; 
-  border-left-width: 1,5px; 
-  border-bottom-width: 1,5px; 
-  border-bottom-style: solid; 
-  border-right-width: 1,5px; 
-  border-right-style: solid;
-  border-color: white;
-  float: center;
-  margin: auto;
-}
-.button-h1{
-  text-align: center; 
-  margin: auto;
-}
-
-
-
-
-
-
-@media screen and (min-width: 767px) {
-  h1{
-    font-size: 55px;
-    font-weight: 600;
-  }
-  label{
-    font-size: 32px;
-  }
-  .form-div{
+html,
+body {
+    height: 100%;
+    overflow: hidden;
     margin: auto;
-  }
-  .side-image{
+}
+
+.side-image {
     background-image: url(/assets/img/login_image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .cadastrar-button{
-    float: center; 
-    border:1px solid; 
-    vertical-align: top; 
-    border-color: #338326; 
-    background: white; 
-    color:#338326; 
-    font-weight: 600; 
-    border-radius:6px; 
-    font-size: 24px; 
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 10px;
-    padding-top: 10px; 
-    border-left-width: 2px;
-    border-bottom-width: 2px;
-    border-right-width: 2px;
-    border-top-width: 2px;
-  }
-  .entrar-button{
-    cursor: pointer; 
-    float: center; 
-    border:1px solid; 
-    vertical-align: top; 
-    background:#338326; 
-    color:white; 
-    font-weight: 600; 
-    border-radius:6px; 
-    font-size: 24px; 
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  .form-div{
-    margin-top: 15px;
-  }
 }
-@media screen and (max-width: 767px) {
-  h1{
-    font-size: 40px;
-    font-weight: 600;
-  }
-  label{
-    font-size: 25px;
-  }
-  .form-div{
-    margin: auto;
-  }
-  .form-control{
-    margin-right: 5px;
-    margin-top: 0px;
 
-  }
-  .cadastrar-button{
-    float: center; 
-    border:1px solid; 
-    vertical-align: top; 
-    border-color: #338326; 
-    background: white; 
-    color:#338326; 
-    font-weight: 600; 
-    border-radius:6px; 
-    font-size: 20px; 
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 5px;
-    padding-top: 5px; 
+.login-title {
+    text-align: center;
+    vertical-align: top;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: #7c7c7c;
+}
+
+form {
+    padding-left: 30px;
+}
+
+.form-group {
+    margin: auto;
+}
+
+.col-form-label {
+    color: #7c7c7c;
+    font-weight: 600;
+}
+
+input {
+    border-top-width: 2px;
     border-left-width: 2px;
     border-bottom-width: 2px;
     border-right-width: 2px;
-    border-top-width: 2px;
-  }
-  .entrar-button{
-    cursor: pointer; 
-    float: center; 
-    border:1px solid; 
-    vertical-align: top; 
-    background:#338326; 
-    color:white; 
-    font-weight: 600; 
-    border-radius:6px; 
-    font-size: 20px; 
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-  }
 }
+
+.esqueci-senha-button {
+    color: #6c757d9a;
+    float: right;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.table-botao {
+    width: 90%;
+    font-size: 24px;
+    border-top-style: solid;
+    border-top-width: 1, 5px;
+    border-left-style: solid;
+    border-left-width: 1, 5px;
+    border-bottom-width: 1, 5px;
+    border-bottom-style: solid;
+    border-right-width: 1, 5px;
+    border-right-style: solid;
+    border-color: white;
+    float: center;
+    margin: auto;
+}
+
+.button-h1 {
+    text-align: center;
+    margin: auto;
+}
+
+.btn-primary1 {
+    background-color: #338326;
+    border-color: #338326;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: auto;
+    font-size: 24px;
+}
+
+.btn-primary1:hover {
+    background-color: white;
+    border-color: #338326;
+    color: #338326;
+    margin-top: 30px;
+    margin-bottom: auto;
+    font-size: 24px;
+}
+
+.btn-primary2 {
+    background-color: white;
+    border-color: #338326;
+    color: #338326;
+    margin-top: 5px;
+    margin-bottom: auto;
+    font-size: 24px;
+}
+
+.btn-primary2:hover {
+    background-color: #338326;
+    border-color: #338326;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: auto;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 767px) {
+    h1 {
+        font-size: 55px;
+        font-weight: 600;
+    }
+    label {
+        font-size: 32px;
+    }
+    .form-div {
+        margin: auto;
+    }
+    .side-image {
+        background-image: url(/assets/img/login_image.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form-div {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    label {
+        font-size: 25px;
+    }
+    .login-title {
+        text-align: center;
+        vertical-align: top;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        color: #7c7c7c;
+    }
+    .form-div {
+        margin: auto;
+        padding-right: 30px;
+    }
+    .form-control {
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+    .btn-primary1 {
+        background-color: #338326;
+        border-color: #338326;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: auto;
+        font-size: 24px;
+    }
+    .btn-primary1:hover {
+        background-color: white;
+        border-color: #338326;
+        color: #338326;
+        margin-top: 15px;
+        margin-bottom: auto;
+        font-size: 24px;
+    }
+    .esqueci-senha-button {
+        color: #6c757d9a;
+        float: right;
+        text-align: right;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (min-width: 1920px) {
-  .side-image{
-    background-image: url(/assets/img/login_image_big.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    .side-image {
+        background-image: url(/assets/img/login_image_big.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
