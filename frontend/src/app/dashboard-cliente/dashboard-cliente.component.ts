@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'dashboard-cliente',
@@ -11,5 +12,16 @@ export class DashboardClienteComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
+
+  
 }
+
+$(document).ready(function () {
+
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+  });
+
+});
