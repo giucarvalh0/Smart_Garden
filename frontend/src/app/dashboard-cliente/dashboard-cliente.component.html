@@ -14,12 +14,17 @@
                     </svg>Dados da horta</a>
             </li>
             <li>
+                <a href="/graficos"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16" style="margin-right: 5px;">
+                    <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                  </svg>Gráficos</a>
+            </li>
+            <li>
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16" style="margin-right: 5px;">
                     <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
                   </svg>Produtos</a>
             </li>
             <li>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16" style="margin-right: 5px;">
+                <a href="/log"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16" style="margin-right: 5px;">
                     <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
                     <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
                   </svg>Log da Horta</a>
@@ -59,18 +64,25 @@
             <h2 class="menu">
                 <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="32" height="32">Dados da horta
             </h2>
+            <div class="row">
+                <div class="col-6">
+                    <p class="umidade">
+                        <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Umidade:
+                        <span class="badge badge-success">30%</span>
+                    </p>
+                    <p class="irrigacao">
+                        <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Irrigação:
+                        <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span></label>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-primary3" type="button" routerLink="/graficos">Ver gráficos</button>
+                </div>
+            </div>
 
-            <p class="umidade">
-                <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Umidade:
-                <span class="badge badge-success">30%</span>
-            </p>
-            <p class="irrigacao">
-                <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Irrigação:
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                </label>
-            </p>
+
         </nav>
 
         <!-- Produtos -->
@@ -149,6 +161,5 @@
             </div>
 
         </nav>
-
     </div>
 </div>

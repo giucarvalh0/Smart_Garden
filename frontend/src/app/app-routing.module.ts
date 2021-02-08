@@ -1,3 +1,5 @@
+import { LogComponent } from './log/log.component';
+import { GraficosComponent } from './graficos/graficos.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DashboardClienteComponent } from './dashboard-cliente/dashboard-cliente.component';
@@ -30,6 +32,14 @@ const routes: Routes = [{
 {
   path: "disponibilizar-produtos",
   component: DisponibilizacaoComponent
+},
+{
+  path: "graficos",
+  component: GraficosComponent
+},
+{
+  path: "log",
+  component: LogComponent
 }];
 
 @NgModule({
