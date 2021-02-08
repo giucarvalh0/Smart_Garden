@@ -11,6 +11,7 @@ import { DashboardClienteComponent } from './dashboard-cliente/dashboard-cliente
 import { DashboardCuidadorComponent } from './dashboard-cuidador/dashboard-cuidador.component';
 import { GraficosComponent } from './graficos/graficos.component';
 import { LogComponent } from './log/log.component';
+import { GoogleChartsModule } from 'angular-google-charts'
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { LogComponent } from './log/log.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GoogleChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
