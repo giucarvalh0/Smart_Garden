@@ -11,6 +11,6 @@ https://nodejs.org/pt-br/download/package-manager/
 >npm install -g @angular/cli
 
 
-Para execurtar o projeto:
+Para executar o projeto:
 
 >ng serve
