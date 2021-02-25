@@ -16,13 +16,46 @@
         "id": 3,
         "name": "Giuliano Carvalho",
         "email": "giuliano.carvalho01@gmail.com",
-        "pass": "12345oz"
+        "pass": "gandalf"
       },
       {
         "id": 4,
         "name": "Usuário_X",
         "email": "usuario@email.com",
         "pass": "12345oz"
+      }
+    ],
+
+    "products":[
+      {
+        "id": 1,
+        "name": "Tomate",
+        "price": "1",
+        "quantity":"5" 
+      },
+      {
+        "id": 2,
+        "name": "Alface",
+        "price": "2",
+        "quantity": "20"
+      },
+      {
+        "id": 3,
+        "name": "Rúcula",
+        "price": "3",
+        "quantity": "10"
+      },
+      {
+        "id": 4,
+        "name": "Pimenta",
+        "price": "4",
+        "quantity": "25"
+      },
+      {
+        "id": 5,
+        "name": "Cebola",
+        "price": "5",
+        "quantity": "0"
       }
     ]
   }

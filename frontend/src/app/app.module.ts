@@ -12,6 +12,7 @@ import { DashboardCuidadorComponent } from './dashboard-cuidador/dashboard-cuida
 import { GraficosComponent } from './graficos/graficos.component';
 import { LogComponent } from './log/log.component';
 import { GoogleChartsModule } from 'angular-google-charts'
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { GoogleChartsModule } from 'angular-google-charts'
     DashboardCuidadorComponent,
     GraficosComponent,
     LogComponent,
+    HttpClientModule,
     
   ],
   imports: [
