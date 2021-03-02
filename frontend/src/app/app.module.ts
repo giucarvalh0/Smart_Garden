@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { RetiradaComponent } from './retirada/retirada.component';
@@ -26,12 +27,13 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardCuidadorComponent,
     GraficosComponent,
     LogComponent,
-    HttpClientModule,
+    HttpClientModule
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     GoogleChartsModule
   ],
   providers: [],
