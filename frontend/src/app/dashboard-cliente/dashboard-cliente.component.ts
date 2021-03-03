@@ -1,20 +1,130 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { gardenInfoService } from '../services/garden-info.service';
+import { GardenInfo } from '../models/garden-info';
+import { Product} from '../models/product';
+import { ProductService} from '../services/product.service';
+
+import { NgForm } from '@angular/forms';
+import { from } from 'rxjs';
 @Component({
   selector: 'dashboard-cliente',
   templateUrl: './dashboard-cliente.component.html',
   styleUrls: ['./dashboard-cliente.component.css']
 })
+
 export class DashboardClienteComponent implements OnInit {
 
-  constructor() { }
+  gardenInfo = {} as GardenInfo;
+  gardenInfos: GardenInfo[];
 
-  ngOnInit(): void {
+  product = {} as Product;
+  products: Product[];
+
+  constructor(private gardenInfoService: gardenInfoService, private ProductService: ProductService) {}
+  // constructor(private ProductService: ProductService) {}
+
+
+  // constructor(id?: number, name?: string, price?: number, quantidy?: number, umidity?: number, irrigation?: boolean){
+    
+  //   if(this.product) {
+
+  //     this.id = id;
+  //     this.name = name;
+  //     this.price = price;
+  //     this.quantidy = quantidy;
+
+  //   }
+
+  //   if(this.gardenInfo) {
+
+  //     this.id = id;
+  //     this.umidity = umidity;
+  //     this.irrigation = irrigation;
+
+  //   }
+  // }
+
+  ngOnInit() {
+    this.getProducts();
+    this.getGardenInfos();
   }
+
+  saveGardenInfo(form: NgForm) {
+    if (this.gardenInfo.id !== undefined) {
+      this.gardenInfoService.updateGardenInfo(this.gardenInfo).subscribe(() => {
+        this.cleanGardenForm(form);
+      });
+    } else {
+      this.gardenInfoService.saveGardenInfo(this.gardenInfo).subscribe(() => {
+        this.cleanGardenForm(form);
+      });
+    }
+  }
+
+  getGardenInfos() {
+    this.gardenInfoService.getGardenInfos().subscribe((gardenInfos: GardenInfo[]) => {
+      this.gardenInfos = gardenInfos;
+    });
+  }
+
+  deleteGardenInfo(gardenInfo: GardenInfo) {
+    this.gardenInfoService.deleteGardenInfo(gardenInfo).subscribe(() => {
+      this.getGardenInfos();
+    });
+  }
+
+  editGardenInfo(gardenInfo: GardenInfo) {
+    this.gardenInfo = { ...gardenInfo };
+  }
+
+  cleanGardenForm(form: NgForm) {
+    this.getGardenInfos();
+    form.resetForm();
+    this.gardenInfo = {} as GardenInfo;
+  }  
+
   
 
 
-  
+
+
+
+  saveProduct(form: NgForm) {
+    if (this.product.id !== undefined) {
+      this.ProductService.updateProduct(this.product).subscribe(() => {
+        this.cleanProductForm(form);
+      });
+    } else {
+      this.ProductService.saveProduct(this.product).subscribe(() => {
+        this.cleanProductForm(form);
+      });
+    }
+  }
+
+  getProducts() {
+    this.ProductService.getProducts().subscribe((products: Product[]) => {
+      this.products = products;
+    });
+  }
+
+  deleteProduct(product: Product) {
+    this.ProductService.deleteProduct(product).subscribe(() => {
+      this.getProducts();
+    });
+  }
+
+  editProduct(product: Product) {
+    this.product = { ...product };
+  }
+
+  cleanProductForm(form: NgForm) {
+    this.getProducts();
+    form.resetForm();
+    this.product = {} as Product;
+  }  
+
+
 }
 
 // $(document).ready(function () {

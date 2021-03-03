@@ -92,28 +92,16 @@
             </p>
             <table>
                 <tr class="custom-header">
-                    <th class="first-column">Nome do Produto</th>
-                    <th class="second-column">Créditos</th>
+                    <th style="width: 10%; border-right-style: solid;border-right-width: 3px;">ID</th>
+                    <th style="width: 30%;border-right-style: solid;border-right-width: 3px;">Nome do Produto</th>
+                    <th style="width: 30%;border-right-style: solid;border-right-width: 3px;">Créditos</th>
+                    <th style="width: 30%;">Quantidade</th>
                 </tr>
-                <tr>
-                    <td>Tomate</td>
-                    <td>C$1,00</td>
-                </tr>
-                <tr>
-                    <td>Alface</td>
-                    <td>C$2,00</td>
-                </tr>
-                <tr>
-                    <td>Rúcula</td>
-                    <td>C$3,00</td>
-                </tr>
-                <tr>
-                    <td>Pimenta</td>
-                    <td>C$4,00</td>
-                </tr>
-                <tr>
-                    <td>Cebola</td>
-                    <td>C$5,00</td>
+                <tr  *ngFor="let product of products">
+                    <td style="width: 10%;">{{product.id}}</td>
+                    <td style="width: 30%;">{{product.name}}</td>
+                    <td style="width: 30%;">C${{product.price}}</td>
+                    <td style="width: 30%;">{{product.quantity}}</td>
                 </tr>
             </table>
         </nav>

@@ -26,15 +26,14 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardClienteComponent,
     DashboardCuidadorComponent,
     GraficosComponent,
-    LogComponent,
-    HttpClientModule
-    
+    LogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    GoogleChartsModule
+    GoogleChartsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

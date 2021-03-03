@@ -66,9 +66,9 @@
             </p>
             <div class="row">
                 <div class="col-6">
-                    <p class="umidade">
-                        <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Umidade:
-                        <span class="badge badge-success">30%</span>
+                    <p class="umidade" *ngFor="let gardenInfo of gardenInfos">
+                        <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Umidade: 
+                        <span class="badge badge-success">{{gardenInfo.umidity}}</span>
                     </p>
                     <p class="irrigacao">
                         <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Irrigação:
@@ -92,32 +92,16 @@
             </p>
             <table>
                 <tr class="custom-header">
-                    <th class="first-column">ID</th>
-                    <th class="second-column">Nome do Produto</th>
-                    <th class="third-column">Créditos</th>
-                    <th class="fourth-column">Quantidade</th>
+                    <th style="width: 10%; border-right-style: solid;border-right-width: 3px;">ID</th>
+                    <th style="width: 30%;border-right-style: solid;border-right-width: 3px;">Nome do Produto</th>
+                    <th style="width: 30%;border-right-style: solid;border-right-width: 3px;">Créditos</th>
+                    <th style="width: 30%;">Quantidade</th>
                 </tr>
-                <tr>
-                    <!-- <td>{{product.id}}</td>
-                    <td>{{product.name}}</td>
-                    <td>{{product.price}}</td>
-                    <td>{{product.quantity}}</td> -->
-                </tr>
-                <tr>
-                    <td>Alface</td>
-                    <td>C$2,00</td>
-                </tr>
-                <tr>
-                    <td>Rúcula</td>
-                    <td>C$3,00</td>
-                </tr>
-                <tr>
-                    <td>Pimenta</td>
-                    <td>C$4,00</td>
-                </tr>
-                <tr>
-                    <td>Cebola</td>
-                    <td>C$5,00</td>
+                <tr  *ngFor="let product of products">
+                    <td style="width: 10%;">{{product.id}}</td>
+                    <td style="width: 30%;">{{product.name}}</td>
+                    <td style="width: 30%;">C${{product.price}}</td>
+                    <td style="width: 30%;">{{product.quantity}}</td>
                 </tr>
             </table>
         </nav>
@@ -135,28 +119,14 @@
                         </tr>
                     </thead>
                     <tr class="custom-header">
-                        <th class="first-column">Nome do Produto</th>
-                        <th class="second-column">Quantidade</th>
+                        <th style="width: 10%; border-right-style: solid;border-right-width: 3px;">ID</th>
+                        <th style="width: 45%;border-right-style: solid;border-right-width: 3px;">Nome do Produto</th>
+                        <th style="width: 45%;">Quantidade</th>
                     </tr>
-                    <tr>
-                        <td>Tomate</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Alface</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Rúcula</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Pimenta</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Cebola</td>
-                        <td>0</td>
+                    <tr  *ngFor="let product of products">
+                        <td style="width: 10%;">{{product.id}}</td>
+                        <td style="width: 45%;">{{product.name}}</td>
+                        <td style="width: 45%;">{{product.quantity}}</td>
                     </tr>
                 </table>
                 <div class="d-grid gap-2 col-3 mx-auto">

@@ -3,14 +3,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { Product } from '../models/products';
+import { Product } from '../models/product';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  url = 'http://localhost:3000/products'; // api rest fake
+  url = 'http://localhost:3001/products'; // api rest fake
 
   // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
@@ -29,7 +29,7 @@ export class ProductService {
   }
 
   // Obtem um produto pelo id
-  getProductsById(id: number): Observable<Product> {
+  getProductById(id: number): Observable<Product> {
     return this.httpClient.get<Product>(this.url + '/' + id)
       .pipe(
         retry(2),
@@ -38,7 +38,7 @@ export class ProductService {
   }
 
   // salva um produto
-  saveProducts(product: Product): Observable<Product> {
+  saveProduct(product: Product): Observable<Product> {
     return this.httpClient.post<Product>(this.url, JSON.stringify(product), this.httpOptions)
       .pipe(
         retry(2),
@@ -46,8 +46,8 @@ export class ProductService {
       )
   }
 
-  // utualiza um produto
-  updateProducts(product: Product): Observable<Product> {
+  // atualiza um produto
+  updateProduct(product: Product): Observable<Product> {
     return this.httpClient.put<Product>(this.url + '/' + product.id, JSON.stringify(product), this.httpOptions)
       .pipe(
         retry(1),
@@ -56,7 +56,7 @@ export class ProductService {
   }
 
   // deleta um produto
-  deleteProducts(product: Product) {
+  deleteProduct(product: Product) {
     return this.httpClient.delete<Product>(this.url + '/' + product.id, this.httpOptions)
       .pipe(
         retry(1),
