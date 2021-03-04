@@ -68,13 +68,12 @@
                 <div class="col-6">
                     <p class="umidade" *ngFor="let gardenInfo of gardenInfos">
                         <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Umidade: 
-                        <span class="badge badge-success">{{gardenInfo.umidity}}</span>
+                        <span class="badge badge-pill badge-success">{{gardenInfo.umidity | percent}}</span>
                     </p>
-                    <p class="irrigacao">
+                    <p class="irrigacao"  *ngFor="let gardenInfo of gardenInfos">
                         <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Irrigação:
-                        <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span></label>
+                        <span *ngIf="irrigation === 'ON' " class="badge badge-pill badge-success">{{irrigation}}</span>
+                        <span *ngIf="irrigation === 'OFF' " class="badge badge-pill badge-danger">{{irrigation}}</span>
                     </p>
                 </div>
                 <div class="col-6">

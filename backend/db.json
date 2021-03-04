@@ -72,18 +72,8 @@
   "gardenInfo": [
     {
       "id": 1,
-      "umidity": 0.5,
-      "irrigation": 1
-    },
-    {
-      "id": 2,
       "umidity": 0.8,
-      "irrigation": 0
-    },
-    {
-      "id": 3,
-      "umidity": 0.3,
-      "irrigation": 1
+      "irrigation": true
     }
   ]
 }

@@ -22,33 +22,14 @@ export class DashboardClienteComponent implements OnInit {
   products: Product[];
 
   constructor(private gardenInfoService: gardenInfoService, private ProductService: ProductService) {}
-  // constructor(private ProductService: ProductService) {}
-
-
-  // constructor(id?: number, name?: string, price?: number, quantidy?: number, umidity?: number, irrigation?: boolean){
-    
-  //   if(this.product) {
-
-  //     this.id = id;
-  //     this.name = name;
-  //     this.price = price;
-  //     this.quantidy = quantidy;
-
-  //   }
-
-  //   if(this.gardenInfo) {
-
-  //     this.id = id;
-  //     this.umidity = umidity;
-  //     this.irrigation = irrigation;
-
-  //   }
-  // }
 
   ngOnInit() {
     this.getProducts();
     this.getGardenInfos();
+    this.updateIrrigation();
   }
+
+  // Dados da horta
 
   saveGardenInfo(form: NgForm) {
     if (this.gardenInfo.id !== undefined) {
@@ -84,11 +65,19 @@ export class DashboardClienteComponent implements OnInit {
     this.gardenInfo = {} as GardenInfo;
   }  
 
-  
+  public irrigation: string
+  updateIrrigation(){
+    if(this.gardenInfo.irrigation === true){
+      this.irrigation = "ON"
+    } 
+    else {
+      this.irrigation = "OFF"
+    }
+  }
 
 
 
-
+  // Produtos
 
   saveProduct(form: NgForm) {
     if (this.product.id !== undefined) {
@@ -125,7 +114,10 @@ export class DashboardClienteComponent implements OnInit {
   }  
 
 
+  
 }
+
+
 
 // $(document).ready(function () {
 
@@ -151,4 +143,5 @@ $(document).ready(function () {
       $('a[aria-expanded=true]').attr('aria-expanded', 'false');
   });
 
+  
 });
