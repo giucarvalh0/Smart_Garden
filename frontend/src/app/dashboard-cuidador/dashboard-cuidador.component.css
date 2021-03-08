@@ -156,17 +156,6 @@ td {
     margin-left: 45px;
 }
 
-.badge {
-    border-left-width: 0px;
-    border-left-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #7c7c7c;
-    background-color: #1fe34169;
-    box-shadow: 0 0 3px #7c7c7c;
-}
 
 .irrigacao {
     font-size: 24px;
@@ -174,7 +163,6 @@ td {
     line-height: 50px;
     margin-bottom: 0px;
     margin-left: 45px;
-    margin-top: 10px;
 }
 
 table {

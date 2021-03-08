@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   }
 
   navigateToDashboard(): void {
-    this.router.navigate(['/dashboard-cliente'])
+    this.router.navigate(['/dashboard-cuidador'])
   }
 
 }

@@ -66,19 +66,33 @@
             </h2>
             <div class="row">
                 <div class="col-6">
-                    <p class="umidade">
-                        <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Umidade:
-                        <span class="badge badge-success">30%</span>
+                    <p class="umidade" *ngFor="let gardenInfo of gardenInfos">
+                        <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Umidade: 
+                        <span *ngIf = "this.gardenInfo.umidity >= 0.6" class="badge badge-pill badge-success">{{gardenInfo.umidity | percent}}</span>
+                        <span *ngIf = "this.gardenInfo.umidity > 0.18 && this.gardenInfo.umidity < 0.59" class="badge badge-pill badge-warning">{{gardenInfo.umidity | percent}}</span>
+                        <span *ngIf = "this.gardenInfo.umidity <= 0.18" class="badge badge-pill badge-danger">{{gardenInfo.umidity | percent}}</span>
                     </p>
-                    <p class="irrigacao">
+                    <p class="irrigacao" *ngFor="let gardenInfo of gardenInfos">
                         <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Irrigação:
-                        <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider round"></span></label>
+                        <span *ngIf="this.gardenInfo.irrigation === true " class="badge badge-pill badge-success">ON</span>
+                        <span *ngIf="this.gardenInfo.irrigation === false " class="badge badge-pill badge-danger">OFF</span>
                     </p>
+                    <div *ngFor="let gardenInfo of gardenInfos">
+                       <p class="irrigacao">
+                            <button class="btn btn-primary3" type="button"  style="margin-top: 5px;">Ligar irrigação</button>
+                        </p>
+                        <p  class="irrigacao">
+                            <button class="btn btn-primary3" type="button"  style="margin-top: 5px;">Desligar irrigação</button>
+                        </p> 
+                    </div>
+                    
                 </div>
                 <div class="col-6">
                     <button class="btn btn-primary3" type="button" routerLink="/graficos">Ver gráficos</button>
+                   
+                    
+            
+                    
                 </div>
             </div>
 
@@ -106,7 +120,8 @@
             </table>
         </nav>
 
-        <!-- Colheita/Retirada -->
+
+        <!-- Disponibilização -->
         <nav>
             <p class="menu">
                 <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="32" height="32">Disponibilização
@@ -119,28 +134,14 @@
                         </tr>
                     </thead>
                     <tr class="custom-header">
-                        <th class="first-column">Nome do Produto</th>
-                        <th class="second-column">Quantidade</th>
+                        <th style="width: 10%; border-right-style: solid;border-right-width: 3px;">ID</th>
+                        <th style="width: 45%;border-right-style: solid;border-right-width: 3px;">Nome do Produto</th>
+                        <th style="width: 45%;">Quantidade</th>
                     </tr>
-                    <tr>
-                        <td>Tomate</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Alface</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Rúcula</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Pimenta</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Cebola</td>
-                        <td>0</td>
+                    <tr  *ngFor="let product of products">
+                        <td style="width: 10%;">{{product.id}}</td>
+                        <td style="width: 45%;">{{product.name}}</td>
+                        <td style="width: 45%;">{{product.quantity}}</td>
                     </tr>
                 </table>
                 <div class="d-grid gap-2 col-4 mx-auto ">

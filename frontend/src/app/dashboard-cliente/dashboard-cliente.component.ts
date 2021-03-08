@@ -21,12 +21,12 @@ export class DashboardClienteComponent implements OnInit {
   product = {} as Product;
   products: Product[];
 
+
   constructor(private gardenInfoService: gardenInfoService, private ProductService: ProductService) {}
 
   ngOnInit() {
     this.getProducts();
     this.getGardenInfos();
-    this.updateIrrigation();
   }
 
   // Dados da horta
@@ -65,15 +65,6 @@ export class DashboardClienteComponent implements OnInit {
     this.gardenInfo = {} as GardenInfo;
   }  
 
-  public irrigation: string
-  updateIrrigation(){
-    if(this.gardenInfo.irrigation === true){
-      this.irrigation = "ON"
-    } 
-    else {
-      this.irrigation = "OFF"
-    }
-  }
 
 
 

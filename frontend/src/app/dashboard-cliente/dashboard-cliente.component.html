@@ -68,12 +68,14 @@
                 <div class="col-6">
                     <p class="umidade" *ngFor="let gardenInfo of gardenInfos">
                         <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Umidade: 
-                        <span class="badge badge-pill badge-success">{{gardenInfo.umidity | percent}}</span>
+                        <span *ngIf = "this.gardenInfo.umidity >= 0.6" class="badge badge-pill badge-success">{{gardenInfo.umidity | percent}}</span>
+                        <span *ngIf = "this.gardenInfo.umidity > 0.18 && this.gardenInfo.umidity < 0.59" class="badge badge-pill badge-warning">{{gardenInfo.umidity | percent}}</span>
+                        <span *ngIf = "this.gardenInfo.umidity <= 0.18" class="badge badge-pill badge-danger">{{gardenInfo.umidity | percent}}</span>
                     </p>
                     <p class="irrigacao"  *ngFor="let gardenInfo of gardenInfos">
                         <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Irrigação:
-                        <span *ngIf="irrigation === 'ON' " class="badge badge-pill badge-success">{{irrigation}}</span>
-                        <span *ngIf="irrigation === 'OFF' " class="badge badge-pill badge-danger">{{irrigation}}</span>
+                        <span *ngIf="this.gardenInfo.irrigation === true " class="badge badge-pill badge-success">ON</span>
+                        <span *ngIf="this.gardenInfo.irrigation === false " class="badge badge-pill badge-danger">OFF</span>
                     </p>
                 </div>
                 <div class="col-6">
