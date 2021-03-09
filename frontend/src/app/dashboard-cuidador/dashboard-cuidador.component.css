@@ -270,6 +270,37 @@ table {
     padding-left: 35px;
 }
 
+.btn-primary4 {
+    background-color: #338326;
+    border-color: #338326;
+    color: #f8f9fa;
+    align-self: center;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.btn-primary4:hover {
+    background-color: #f8f9fa;
+    border-color: #338326;
+    color: #338326;
+    align-self: center;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
 .th-thead {
     color: #338326;
     border-bottom-width: 1, 5px;

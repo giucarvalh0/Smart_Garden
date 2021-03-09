@@ -76,13 +76,10 @@
                         <img src="assets\img\seta.svg" style="margin-right: 5px;" class="d-inline-block align-middle" width="24" height="24">Irrigação:
                         <span *ngIf="this.gardenInfo.irrigation === true " class="badge badge-pill badge-success">ON</span>
                         <span *ngIf="this.gardenInfo.irrigation === false " class="badge badge-pill badge-danger">OFF</span>
+                        <button class="btn btn-primary4" type="button"  style="margin-left: 15px;" (click) = "this.gardenInfo.irrigation = !this.gardenInfo.irrigation">ON/OFF</button>  
                     </p>
                     <div *ngFor="let gardenInfo of gardenInfos">
-                       <p class="irrigacao">
-                            <button class="btn btn-primary3" type="button"  style="margin-top: 5px;">Ligar irrigação</button>
-                        </p>
-                        <p  class="irrigacao">
-                            <button class="btn btn-primary3" type="button"  style="margin-top: 5px;">Desligar irrigação</button>
+                       <p class="irrigacao"> 
                         </p> 
                     </div>
                     

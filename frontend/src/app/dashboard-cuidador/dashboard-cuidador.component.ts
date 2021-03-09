@@ -62,11 +62,11 @@ export class DashboardCuidadorComponent implements OnInit {
     this.getGardenInfos();
     form.resetForm();
     this.gardenInfo = {} as GardenInfo;
-  }  
+  } 
 
-
-
-
+  updateIrrigation(){
+    ;
+  }
   // Produtos
 
   saveProduct(form: NgForm) {
@@ -125,3 +125,4 @@ $(document).ready(function () {
   });
 
 });
+
