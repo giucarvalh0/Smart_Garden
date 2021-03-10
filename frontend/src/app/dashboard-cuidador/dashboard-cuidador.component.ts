@@ -26,6 +26,7 @@ export class DashboardCuidadorComponent implements OnInit {
   ngOnInit() {
     this.getProducts();
     this.getGardenInfos();
+    this.updateIrrigation();
   }
 
   // Dados da horta
@@ -65,8 +66,16 @@ export class DashboardCuidadorComponent implements OnInit {
   } 
 
   updateIrrigation(){
-    ;
+    // this.gardenInfo.irrigation = !this.gardenInfo.irrigation;
+    if (this.gardenInfo.irrigation === true){
+      this.gardenInfo.irrigation = false;
+    }
+    if (this.gardenInfo.irrigation === false){
+      this.gardenInfo.irrigation = true;
+    }
   }
+
+
   // Produtos
 
   saveProduct(form: NgForm) {
