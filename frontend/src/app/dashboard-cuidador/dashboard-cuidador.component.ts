@@ -64,7 +64,7 @@ export class DashboardCuidadorComponent implements OnInit {
     this.gardenInfo = {} as GardenInfo;
   } 
 
-  updateIrrigation(gardenInfo){
+  updateIrrigation(gardenInfo: GardenInfo){
     if (gardenInfo.irrigation === true){
       gardenInfo.irrigation = false
       this.gardenInfoService.updateGardenInfo(gardenInfo).subscribe(() => {
@@ -72,7 +72,7 @@ export class DashboardCuidadorComponent implements OnInit {
       })
     }
     
-    if (gardenInfo.irrigation === false){
+    else if (gardenInfo.irrigation === false){
       gardenInfo.irrigation = true
       this.gardenInfoService.updateGardenInfo(gardenInfo).subscribe(() => {
       
