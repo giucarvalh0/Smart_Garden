@@ -73,7 +73,7 @@
     {
       "id": 1,
       "umidity": 0.65,
-      "irrigation": false
+      "irrigation": true
     }
   ]
 }

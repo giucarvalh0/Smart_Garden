@@ -20,7 +20,7 @@ export class gardenInfoService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
-  // Obtem todos os produtos
+
   getGardenInfos(): Observable<GardenInfo[]> {
     return this.httpClient.get<GardenInfo[]>(this.url)
       .pipe(
@@ -28,7 +28,7 @@ export class gardenInfoService {
         catchError(this.handleError))
   }
 
-  // Obtem um produto pelo id
+
   getGardenInfoById(id: number): Observable<GardenInfo> {
     return this.httpClient.get<GardenInfo>(this.url + '/' + id)
       .pipe(
@@ -37,7 +37,6 @@ export class gardenInfoService {
       )
   }
 
-  // salva um produto
   saveGardenInfo(gardenInfo: GardenInfo): Observable<GardenInfo> {
     return this.httpClient.post<GardenInfo>(this.url, JSON.stringify(gardenInfo), this.httpOptions)
       .pipe(
@@ -46,7 +45,7 @@ export class gardenInfoService {
       )
   }
 
-  // atualiza um produto
+
   updateGardenInfo(gardenInfo: GardenInfo): Observable<GardenInfo> {
     return this.httpClient.put<GardenInfo>(this.url + '/' + gardenInfo.id, JSON.stringify(gardenInfo), this.httpOptions)
       .pipe(
@@ -55,7 +54,6 @@ export class gardenInfoService {
       )
   }
 
-  // deleta um produto
   deleteGardenInfo(gardenInfo: GardenInfo) {
     return this.httpClient.delete<GardenInfo>(this.url + '/' + gardenInfo.id, this.httpOptions)
       .pipe(
