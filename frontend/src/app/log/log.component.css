@@ -17,7 +17,6 @@ td {
     padding-right: 0px;
     border-right-width: 1, 5px;
     border-right-style: solid;
-    width: 30%;
 }
 
 .menu {
@@ -33,7 +32,6 @@ td {
 }
 
 table {
-    width: 90%;
     font-size: 24px;
     line-height: 40px;
     margin-left: 45px;
@@ -46,4 +44,12 @@ table {
     border-right-width: 1, 5px;
     border-right-style: solid;
     border-color: #7c7c7c;
+    width: 90%;
+}
+
+.custom-header {
+    color: #338326;
+    border-color: #7c7c7c;
+    border-bottom-width: 1, 5px;
+    border-bottom-style: solid;
 }

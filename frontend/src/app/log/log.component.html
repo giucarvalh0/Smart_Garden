@@ -2,35 +2,17 @@
     <h1 class="menu">
         Log da Horta</h1>
     <table>
-        <tr>
-            <td>10/08/2020</td>
-            <td>11:30</td>
-            <td>Irrigação foi ligada</td>
+        <tr class="custom-header">
+            <th style="width: 10%; border-right-style: solid;border-right-width: 3px;">ID</th>
+            <th style="width: 30%;border-right-style: solid;border-right-width: 3px;">Umidade</th>
+            <th style="width: 30%;border-right-style: solid;border-right-width: 3px;">Irrigação</th>
+            <th style="width: 30%;border-right-style: solid;border-right-width: 3px;">Hora/Data</th>
         </tr>
-        <tr>
-            <td>10/08/2020</td>
-            <td>10:37</td>
-            <td>Foram coletadas 5 alfaces</td>
-        </tr>
-        <tr>
-            <td>10/08/2020</td>
-            <td>8:30</td>
-            <td>Irrigação foi desligada</td>
-        </tr>
-        <tr>
-            <td>09/08/2020</td>
-            <td>23:30</td>
-            <td>Foram coletadas 35 pimentas</td>
-        </tr>
-        <tr>
-            <td>09/08/2020</td>
-            <td>17:02</td>
-            <td>Irrigação foi ligada</td>
-        </tr>
-        <tr>
-            <td>⁝</td>
-            <td>⁝</td>
-            <td>⁝</td>
+        <tr *ngFor="let gardenInfo_LOG of gardenInfos_LOG">
+            <td>{{gardenInfo_LOG.id}}</td>
+            <td>{{gardenInfo_LOG.umidity | percent}}</td>
+            <td>{{gardenInfo_LOG.irrigation}}</td>
+            <td>{{gardenInfo_LOG.date}}</td>
         </tr>
     </table>
 </nav>
