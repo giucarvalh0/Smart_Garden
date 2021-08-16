@@ -69,9 +69,6 @@
       "quantity": 42
     }
   ],
-
-
-
   "gardenInfo": [
     {
       "id": 1,
@@ -79,10 +76,7 @@
       "irrigation": true
     }
   ],
-
-
-
-  "gardenInfo_LOG":[
+  "gardenInfo_LOG": [
     {
       "id": 1,
       "umidity": 0.87,
@@ -93,22 +87,19 @@
       "id": 2,
       "umidity": 0.56,
       "irrigation": false,
-      "date":"00:00:00 - dd/mm/aaaa"
+      "date": "00:00:00 - dd/mm/aaaa"
     },
     {
       "id": 3,
       "umidity": 0.27,
       "irrigation": true,
-      "date":"00:00:00 - dd/mm/aaaa"
+      "date": "00:00:00 - dd/mm/aaaa"
     },
     {
       "id": 4,
       "umidity": 0.52,
       "irrigation": true,
-      "date":"00:00:00 - dd/mm/aaaa"
+      "date": "00:00:00 - dd/mm/aaaa"
     }
   ]
-
-
-
 }
